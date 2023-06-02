@@ -1,0 +1,32 @@
+{
+  "Configuration": {
+    "InterfaceName": "lo0",
+    "InnerIP": "127.0.0.1",
+    "PublicIP": "127.0.0.1",
+    "RandomPortBegin": 55535,
+    "RandomPortRange": 10000,
+    "Protocol": "tcp",
+    "UPort": 26000,
+    "KPort": 26001,
+    "QPort": 26002,
+    "TPort": 26003,
+    "PortTimeout": 180,
+    "NetworkID": 777,
+    "WriteBufferSize": 8388608,
+    "LogDir": "./Log",
+    "LogLevel": 0,
+    "PorterDBPath": "./porterdb",
+    "Compression": {
+      "Enable": false,
+      "CompressAlgo": 1,
+      "FileSize": 4194304
+    },
+    "InfluxDB": {
+      "URL": "http://192.168.1.115:8086",
+      "DBName": "metric",
+      "UserName": "saveio",
+      "Password": "onchain@beijing",
+      "Interval": 3
+    }
+  }
+}
